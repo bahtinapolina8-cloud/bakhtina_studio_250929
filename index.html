@@ -1,0 +1,75 @@
+<!-- Сайт розроблено студенткою Бахтіною Поліною, група ФЕМП 5-3з управління бізнесом -->
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BAKHTINA_STUDIO — Головна</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <h1>BAKHTINA_STUDIO</h1>
+      <p class="tag">Салон краси — все для волосся, обличчя та нігтів</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Головна</a>
+      <a href="services.html" class="nav-link">Послуги</a>
+      <a href="contacts.html" class="nav-link">Контакти</a>
+    </nav>
+    <div class="author">
+      <small>Виконавець: Бахтіна Поліна</small><br>
+      <small>Група: ФЕМП 5-3з управління бізнесом</small>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <button id="toggleSidebar" class="burger" aria-label="Toggle menu">☰</button>
+      <div class="hero">
+        <h2>Ласкаво просимо до <span class="accent">BAKHTINA_STUDIO</span></h2>
+        <p>Професійна команда стилістів, косметологів та майстрів нігтьового сервісу.</p>
+        <a href="services.html" class="btn">Переглянути послуги</a>
+      </div>
+    </header>
+
+    <section class="intro">
+      <h3>Чому обирають нас</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Індивідуальний підхід</h4>
+          <p>Кожна послуга починається з консультації — ми підбираємо варіант під вас.</p>
+        </div>
+        <div class="card">
+          <h4>Професійні матеріали</h4>
+          <p>Працюємо з професійною косметикою та доглядовими засобами — доступні і для покупки.</p>
+        </div>
+        <div class="card">
+          <h4>Затишна атмосфера</h4>
+          <p>Пастельні відтінки та ненав'язливий інтер'єр для вашого комфорту.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <h3>Акція місяця</h3>
+      <p>Комплекс «Стильний догляд»: стрижка + фарбування (базове) + укладка — зі знижкою 15%.</p>
+    </section>
+
+    <section class="products-preview">
+      <h3>Косметика в наявності</h3>
+      <div id="productPreview" class="products-grid"></div>
+      <a href="services.html" class="link-inline">Детальніше про товари</a>
+    </section>
+
+    <footer class="footer">
+      <div>Виконавець: Бахтіна Поліна — ФЕМП 5-3з управління бізнесом</div>
+      <div>© <span id="year"></span> BAKHTINA_STUDIO</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

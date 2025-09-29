@@ -1,0 +1,61 @@
+<!-- Сайт розроблено студенткою Бахтіною Поліною, група ФЕМП 5-3з управління бізнесом -->
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BAKHTINA_STUDIO — Послуги</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <h1>BAKHTINA_STUDIO</h1>
+      <p class="tag">Салон краси</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Головна</a>
+      <a href="services.html" class="nav-link active">Послуги</a>
+      <a href="contacts.html" class="nav-link">Контакти</a>
+    </nav>
+    <div class="author">
+      <small>Виконавець: Бахтіна Поліна</small><br>
+      <small>Група: ФЕМП 5-3з управління бізнесом</small>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <button id="toggleSidebar" class="burger" aria-label="Toggle menu">☰</button>
+      <div class="hero small">
+        <h2>Наші послуги</h2>
+        <p>Детальний перелік послуг та їхні ціни. Дані зберігаються у JavaScript (масив).</p>
+      </div>
+    </header>
+
+    <section class="services-section">
+      <div class="controls">
+        <input id="searchService" placeholder="Шукати послугу..." />
+        <select id="filterCategory">
+          <option value="all">Усі категорії</option>
+        </select>
+      </div>
+
+      <div id="servicesList" class="services-list"></div>
+    </section>
+
+    <section class="products">
+      <h3>Косметика — придбати в салоні</h3>
+      <div id="productsList" class="products-grid"></div>
+    </section>
+
+    <footer class="footer">
+      <div>Виконавець: Бахтіна Поліна — ФЕМП 5-3з управління бізнесом</div>
+      <div>© <span id="year2"></span> BAKHTINA_STUDIO</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
